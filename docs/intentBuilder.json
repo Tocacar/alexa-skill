@@ -1,0 +1,59 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "FACT_TYPE",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "diabetes",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cancer",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "foot and mouth",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "GetNewFactIntent",
+        "samples": [
+          "Tell me about {criteria}"
+        ],
+        "slots": [
+          {
+            "name": "criteria",
+            "type": "FACT_TYPE"
+          }
+        ]
+      }
+    ],
+    "invocationName": "health bot"
+  }
+}
